@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Siam Ahmed | Best Web Developer in Kishoreganj</title>
+    <meta name="title" content="SP Siam Ahmed | Best Web Developer in Kishoreganj">
+    <meta name="description" content="SP Siam Ahmed is a passionate Web Developer from Kishoreganj, Bangladesh. Expert in HTML, CSS, JavaScript, React, and modern web technologies. Build your dream website with professional design and performance.">
+    <meta name="keywords" content="SP Siam Ahmed, Web Developer Kishoreganj, Best Web Developer Bangladesh, Frontend Developer, JavaScript Developer, Portfolio Website, SP Siam Ahmed Official, SP Siam Ahmed Portfolio">
+    <meta name="author" content="SP Siam Ahmed">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d6efd">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spsiamahmed.github.io/">
+    <meta property="og:title" content="SP Siam Ahmed | Best Web Developer in Kishoreganj">
+    <meta property="og:description" content="Professional Web Developer from Kishoreganj, Bangladesh. Expert in responsive and dynamic websites.">
+    <meta property="og:image" content="https://spsiamahmed.github.io/portfolio/me_hero-img.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spsiamahmed.github.io/">
+    <meta property="twitter:title" content="SP Siam Ahmed | Best Web Developer in Kishoreganj">
+    <meta property="twitter:description" content="Professional Web Developer from Kishoreganj, Bangladesh. Expert in responsive and dynamic websites.">
+    <meta property="twitter:image" content="https://spsiamahmed.github.io/portfolio/me_hero-img.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --dark-color: #1f2937;
+            --light-color: #f3f4f6;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: var(--white) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 10px 0;
+        }
+        
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-color) !important;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            margin: 0 10px;
+            color: var(--dark-color) !important;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Home Section */
+        #home {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .home-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .home-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .home-content h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        .home-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.4s ease;
+        }
+        
+        .btn-custom {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            animation: fadeInUp 1.6s ease;
+        }
+        
+        .btn-custom:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 20px auto;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--light-color);
+        }
+        
+        .about-img {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .about-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .about-content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .skill-item {
+            margin-bottom: 25px;
+        }
+        
+        .skill-item h5 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+            background: #e5e7eb;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 10px;
+        }
+        
+        /* Resume Section */
+        .resume-item {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .resume-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resume-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .resume-item h5 {
+            color: var(--accent-color);
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Portfolio Section */
+        #portfolio {
+            background: var(--light-color);
+        }
+        
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(37, 99, 235, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-info {
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .portfolio-info h4 {
+            margin-bottom: 10px;
+        }
+        
+        /* Gallery Section */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.2);
+        }
+        
+        /* Testimonials Section */
+        #testimonials {
+            background: var(--light-color);
+        }
+        
+        .testimonial-item {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid var(--primary-color);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .stars {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Section */
+        .contact-info {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .contact-info i {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info h5 {
+            margin-bottom: 10px;
+        }
+        
+        .form-control {
+            border-radius: 10px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .home-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .home-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">SP Siam Ahmed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 home-content">
+                    <h1>SP Siam Ahmed</h1>
+                    <h2>Best Web Developer in Kishoreganj</h2>
+                    <p>Full Stack Developer | UI/UX Designer | SEO Specialist</p>
+                    <a href="#contact" class="btn btn-custom">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4">
+                    <img src="about.jpg" alt="SP Siam Ahmed" class="about-img">
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3>Professional Web Developer from Kishoreganj</h3>
+                        <p>Hello! I'm SP Siam Ahmed, a passionate and experienced web developer based in Kishoreganj, Bangladesh. With years of expertise in full-stack development, I specialize in creating beautiful, functional, and user-friendly websites that help businesses grow online.</p>
+                        <p>I combine creativity with technical excellence to deliver exceptional digital solutions. My expertise spans from front-end design to back-end development, ensuring your project is handled with professionalism and attention to detail.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <p><strong>Location:</strong> Kishoreganj, Bangladesh</p>
+                                <p><strong>Email:</strong> spsiamahmed1111@gmail.com</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Phone:</strong> +880 14006661593</p>
+                                <p><strong>Freelance:</strong> Available</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h4>My Skills</h4>
+                            <div class="skill-item">
+                                <h5>HTML5 & CSS3</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>JavaScript & jQuery</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Bootstrap & Responsive Design</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>UI/UX Design</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Resume</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="mb-4"><i class="fas fa-school" ></i>Education</h3>
+                    <div class="resu me-item">
+                        <h4>Katiadi government high school</h4>
+                        <h5>2022 - 2024</h5>
+                        <p>I successfully completed my Secondary School Certificate (SSC) from Katiadi Government High School in 2024.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Katiadi Government College</h4>
+                        <h5>2024 - Present</h5>
+                        <p>upcomming soon </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Experience</h3>
+                    <div class="resume-item">
+                        <h4>Senior Web Developer Nive.inc</h4>
+                        <h5>2022 - Present</h5>
+                        <p>Leading web development projects for clients across Bangladesh, specializing in e-commerce and business websites.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Full Stack Developer</h4>
+                        <h5>2020 - 2022</h5>
+                        <p>Developed responsive websites and web applications using modern technologies and frameworks.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Junior Web Developer</h4>
+                        <h5>2019 - 2020</h5>
+                        <p>Started career building websites with HTML, CSS, JavaScript, and learning industry best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>E-Commerce Platform</h4>
+                                <p>Full-featured online store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="img2.jpg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Corporate Website</h4>
+                                <p>Professional business site</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="about.jpg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Portfolio Website</h4>
+                                <p>Creative portfolio design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="project2.jpg" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Restaurant Website</h4>
+                                <p>Online menu & ordering system</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="project1.jpg" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Blog Platform</h4>
+                                <p>Content management system</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item">
+                        <img src="project2.jpg" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Web Application</h4>
+                                <p>Custom web app solution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img1.jpg" alt="Gallery 1">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img2.jpg" alt="Gallery 2">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img3.jpg" alt="Gallery 3">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img4.jpg" alt="Gallery 4">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img5.jpg" alt="Gallery 5">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img6.jpg" alt="Gallery 6">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img7.jpg" alt="Gallery 7">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="gallery-item">
+                        <img src="img8.jpg" alt="Gallery 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <img src="https://via.placeholder.com/80x80/2563eb/ffffff?text=AH" alt="Client 1" class="testimonial-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"SP Siam Ahmed delivered an outstanding website for our business. Professional, timely, and exceeded our expectations. Highly recommended!"</p>
+                        <h5 class="testimonial-author">Ahmed Hassan</h5>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <img src="https://via.placeholder.com/80x80/f59e0b/ffffff?text=FR" alt="Client 2" class="testimonial-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Excellent work! The website is beautiful, fast, and exactly what we needed. Great communication throughout the project."</p>
+                        <h5 class="testimonial-author">Fatima Rahman</h5>
+                        <p>Store Owner</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-item">
+                        <img src="https://via.placeholder.com/80x80/1e40af/ffffff?text=MK" alt="Client 3" class="testimonial-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best web developer in Kishoreganj! Created a stunning portfolio website that helped me get more clients. Thank you!"</p>
+                        <h5 class="testimonial-author">Mehedi Khan</h5>
+                        <p>Photographer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <i class="fas fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p>+880 1400661593</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-lg-4">
+            <div class="contact-info text-center">
+            <i class="fas fa-location"></i>
+            <h5>Kishorganj, Dhaka, Bangladesh</h5>
+            <p>+880 1400661593</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-lg-4">
+            <div class="contact-info text-center">
+            <i class="fa fa-envelope"></i>
+            <h5>EMAIL</h5>
+            <p>spsiamahmed1111@gmail.com</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links mb-4">
+                <a href="https://www.facebook.com/spsiamahmed1111"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://bd.linkedin.com/in/sp-siam-ahmed-61412a333"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://spsiamahmed.github.io/official"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/spsiamahmed11"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 SP Siam Ahmed. All Rights Reserved.</p>
+            <p>Best Web Developer in Kishoreganj, Bangladesh</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if(target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+                // Close mobile menu after click
+                $('.navbar-collapse').collapse('hide');
+            });
+            
+            // Navbar scroll effect
+            $(window).scroll(function() {
+                if($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
+            
+            // Active navigation link on scroll
+            $(window).on('scroll', function() {
+                var scrollPos = $(document).scrollTop() + 100;
+                
+                $('section').each(function() {
+                    var currLink = $(this);
+                    var refElement = currLink;
+                    
+                    if(refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('.nav-link').removeClass('active');
+                        $('.nav-link[href="#' + currLink.attr('id') + '"]').addClass('active');
+                    }
+                });
+            });
+            
+            // Animate skill bars when in viewport
+            function animateSkills() {
+                $('.skill-item').each(function() {
+                    var skillTop = $(this).offset().top;
+                    var skillBottom = skillTop + $(this).outerHeight();
+                    var windowTop = $(window).scrollTop();
+                    var windowBottom = windowTop + $(window).height();
+                    
+                    if(skillBottom > windowTop && skillTop < windowBottom) {
+                        $(this).find('.progress-bar').each(function() {
+                            var progressWidth = $(this).css('width');
+                            $(this).css('width', '0');
+                            $(this).animate({
+                                width: progressWidth
+                            }, 1500);
+                        });
+                    }
+                });
+            }
+            
+            $(window).scroll(function() {
+                animateSkills();
+            });
+            
+            animateSkills();
+            
+            // Portfolio filter animation
+            $('.portfolio-item').hover(
+                function() {
+                    $(this).find('img').css('transform', 'scale(1.1)');
+                },
+                function() {
+                    $(this).find('img').css('transform', 'scale(1)');
+                }
+            );
+            
+            // Gallery hover effect
+            $('.gallery-item').hover(
+                function() {
+                    $(this).find('img').css('transform', 'scale(1.2) rotate(5deg)');
+                },
+                function() {
+                    $(this).find('img').css('transform', 'scale(1) rotate(0deg)');
+                }
+            );
+            
+            // Contact form submission
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+            });
+            
+            // Fade in sections on scroll
+            function fadeInSections() {
+                $('.resume-item, .portfolio-item, .testimonial-item, .contact-info').each(function() {
+                    var elementTop = $(this).offset().top;
+                    var elementBottom = elementTop + $(this).outerHeight();
+                    var windowTop = $(window).scrollTop();
+                    var windowBottom = windowTop + $(window).height();
+                    
+                    if(elementBottom > windowTop && elementTop < windowBottom) {
+                        $(this).css({
+                            'opacity': '1',
+                            'transform': 'translateY(0)'
+                        });
+                    }
+                });
+            }
+            
+            // Initial state for fade-in elements
+            $('.resume-item, .portfolio-item, .testimonial-item, .contact-info').css({
+                'opacity': '0',
+                'transform': 'translateY(30px)',
+                'transition': 'all 0.6s ease'
+            });
+            
+            $(window).scroll(function() {
+                fadeInSections();
+            });
+            
+            fadeInSections();
+            
+            // Typing effect for home section
+            var typed = new Promise(function(resolve) {
+                var text = "Best Web Developer in Kishoreganj";
+                var i = 0;
+                var speed = 100;
+                
+                function typeWriter() {
+                    if (i < text.length) {
+                        $('.home-content h2').text($('.home-content h2').text() + text.charAt(i));
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+                
+                $('.home-content h2').text('');
+                setTimeout(typeWriter, 500);
+            });
+        });
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "SP Siam Ahmed",
+    "alternateName": "Siam Ahmed",
+    "url": "https://spsiamahmed.github.io/",
+    "image": "https://spsiamahmed.github.io/portfolio/me_hero-img.png",
+    "jobTitle": "Web Developer",
+    "worksFor": {
+    "@type": "Organization",
+    "name": "SP Siam Ahmed Official"
+    },
+    "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kishoreganj",
+    "addressRegion": "Dhaka",
+    "addressCountry": "Bangladesh"
+    },
+    "sameAs": [
+    "https://www.facebook.com/spsiamahmed",
+    "https://www.linkedin.com/in/sp-siam-ahmed",
+    "https://github.com/spsiamahmed",
+    "https://spsiamahmed.github.io/"
+    ],
+    "description": "SP Siam Ahmed is a skilled Web Developer from Kishoreganj, Bangladesh. Expert in modern web design, frontend development, and user-friendly websites.",
+    "knowsAbout": ["Web Development", "JavaScript", "Frontend Design", "E-commerce", "React", "Portfolio Websites"]
+    }
+    </script>
+    
+</body>
+</html>aScript", "Frontend Design", "E-commerce", "React", "Portfolio Websites"]
+    }
+    </script>
+    
+</body>
+</html>t", "JavaScript", "Frontend Design", "E-commerce", "React", "Portfolio Websites"]
+    }
+    </script>
+    
+</body>
+</html>olio Websites"]
+    }
+    </script>
+    
+</body>
+</html>ct", "Portfolio Websites"]
+    }
+    </script>
+    
+</body>
+</html>
